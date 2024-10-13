@@ -1,0 +1,6 @@
+export { default as Hero } from "./hero"
+export { default as Features } from "./features"
+export { default as HowItWorks } from "./howItWorks"
+export { default as Overview } from "./overview"
+export { default as Launch } from "./launch"
+export { default as Waitlist } from "./waitlist"
