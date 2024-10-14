@@ -82,16 +82,13 @@ body {
   @apply bg-main-bg font-dm-sans;
 }
 
-@keyframes marquee {
-  0% {
-    transform: translateX(100%);
-  }
-
-  100% {
-    transform: translateX(-100%);
-  }
+.nav-icon {
+  background-image: url('/favicon.png');
+  background-size: 200%;
+  background-position: 50% 60%;
 }
 
-.animate-marquee {
-  animation: marquee 40s linear infinite;
+.move-up {
+  @apply relative -top-52;
+
 }

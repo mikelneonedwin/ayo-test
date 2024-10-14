@@ -61,17 +61,11 @@ const Navbar = () => {
         <header className="py-7 px-10">
             <nav className="flex items-center justify-between">
                 <div className="flex items-center gap-8">
-                    <div className="flex items-center">
-                        <figure>
-                            <Image
-                                src="/favicon.png"
-                                height={50}
-                                width={50}
-                                className="aspect-square"
-                                alt="Thrivr logo"
-                            />
-                        </figure>
-                        <h2 className="font-bold text-2xl text-main-logo">Thrivr</h2>
+                    <div className="flex items-center gap-1">
+                        <div className="bg-main-default size-[1.5rem] rounded-sm">
+                            <div className="h-full w-full nav-icon" />
+                        </div>
+                        <h2 className="font-bold text-2xl text-main-default">Thrivr</h2>
                     </div>
 
                     <div className="hidden md:flex gap-6 items-center text-sm text-main-101 font-semibold">
@@ -88,7 +82,7 @@ const Navbar = () => {
 
                 </div>
                 <div className="flex items-center justify-end">
-                    <CTA className="bg-main-logo" />
+                    <CTA />
                 </div>
             </nav>
         </header>

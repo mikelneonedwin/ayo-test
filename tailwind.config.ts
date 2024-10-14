@@ -24,8 +24,8 @@ const config: Config = {
 				main: {
 					bg: "#FBF8F1",
 					logo: "#1F1740",
-					hover: '#870E73',
-					default: '#CD27B1',
+					hover: '#CD27B1',
+					default: '#870E73',
 					secondary: '#FDC574',
 					"text-shade": "#292D32",
 					101: "rgb(101 101 101)",

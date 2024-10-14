@@ -1,10 +1,11 @@
 import { Images } from "@/constants";
 import Image from "next/image";
+import Marquee from "react-fast-marquee";
 
 const Preview = () => {
     return (
         <div className="bg-[#FDFDFD] mt-52 flex items-end">
-            <div className="relative -top-52">
+            <div className="move-up">
                 <figure className="px-10 w-full">
                     <img
                         src="https://res.cloudinary.com/catlog/image/upload/c_scale,w_2025/v1670559710/front-pages/mockups/store-front-whatsapp.webp"
@@ -17,7 +18,7 @@ const Preview = () => {
                         Be one of the first to join our thriving community of creators.
                     </h2>
                     <div className="overflow-hidden max-w-[95vw] my-10 whitespace-nowrap">
-                        <div className="inline-block animate-marquee">
+                        <Marquee autoFill={true}>
                             {Images.map((profile, index) => (
                                 <Image
                                     width={60}
@@ -25,10 +26,10 @@ const Preview = () => {
                                     key={index}
                                     alt="profile_image"
                                     src={profile.medium}
-                                    className="rounded-full mx-8 inline-block"
+                                    className="rounded-full mx-6 inline-block border border-solid border-black/30"
                                 />
                             ))}
-                        </div>
+                        </Marquee>
                     </div>
                 </div>
             </div>
