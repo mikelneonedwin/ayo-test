@@ -1,14 +1,12 @@
-import { Features, Hero, HowItWorks, Launch, Overview, Waitlist } from "@/components/home";
+import { NavBar } from "@/components/global";
+import { Hero, Preview } from "@/components/main";
 
 export default function Home() {
-  return (
-    <>
-      <Hero/>
-      <Overview/>
-      <Features/>
-      <HowItWorks/>
-      <Launch/>
-      <Waitlist/>
-    </>
-  )
+    return (
+        <section>
+            <NavBar />
+            <Hero />
+            <Preview />
+        </section>
+    )
 }
