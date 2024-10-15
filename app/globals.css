@@ -92,3 +92,8 @@ body {
   @apply relative -top-52;
 
 }
+
+body,
+html {
+  @apply scroll-smooth
+}

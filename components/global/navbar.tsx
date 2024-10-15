@@ -1,9 +1,8 @@
 import Link from "next/link";
+import CTA from "../main/cta";
 import { Deliveries, FindWithCatLog, InvoiceLinks, OrdersAndCustomers, Payments, StoreLinks } from "../svg";
 import { HoverCard, HoverCardTrigger } from "../ui/hover-card";
 import Icon from "./icon";
-import CTA from "../main/cta";
-import Image from "next/image";
 
 interface products extends Omit<Item, "icon"> {
     href: `/${string}`;
@@ -62,10 +61,10 @@ const Navbar = () => {
             <nav className="flex items-center justify-between">
                 <div className="flex items-center gap-8">
                     <div className="flex items-center gap-1">
-                        <div className="bg-main-default size-[1.5rem] rounded-sm">
+                        <div className="bg-action-default size-[1.5rem] rounded-sm">
                             <div className="h-full w-full nav-icon" />
                         </div>
-                        <h2 className="font-bold text-2xl text-main-default">Thrivr</h2>
+                        <h2 className="font-bold text-2xl text-action-default">Thrivr</h2>
                     </div>
 
                     <div className="hidden md:flex gap-6 items-center text-sm text-main-101 font-semibold">

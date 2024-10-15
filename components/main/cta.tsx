@@ -4,7 +4,7 @@ import clsx from "clsx";
 
 const CTA = ({ className }: { className?: string }) => (
     <Link href="#" className={clsx(
-        "text-center bg-main-default hover:bg-main-hover py-2.5 px-5 text-white font-medium tracking-wide rounded-lg transition duration-300 inline-flex items-center justify-center gap-1",
+        "text-center bg-action-default hover:bg-action-hover py-2.5 px-5 text-white font-medium tracking-wide rounded-lg transition duration-300 inline-flex items-center justify-center gap-1",
         className
     )}>
         Join the Waitlist
