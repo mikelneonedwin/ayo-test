@@ -4,13 +4,14 @@ import Marquee from "react-fast-marquee";
 
 const Preview = () => {
     return (
-        <div className="bg-[#FDFDFD] mt-52 flex items-end">
+        <div className="bg-[#FDFDFD] !bg-main-bg mt-52 flex items-end">
             <div className="move-up">
                 <figure className="px-10 w-full">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
-                        src="https://res.cloudinary.com/catlog/image/upload/c_scale,w_2025/v1670559710/front-pages/mockups/store-front-whatsapp.webp"
                         alt="Hero image"
+                        src="/dashboard.png"
+                        className="shadow-lg rounded-3xl"
                     />
                 </figure>
 

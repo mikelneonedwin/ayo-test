@@ -122,3 +122,32 @@ export const Images = [
         "thumbnail": "https://randomuser.me/api/portraits/thumb/men/51.jpg"
     }
 ]
+
+
+export const sellItems = [
+    {
+        name: 'Digital Products',
+        img: '/digital-products.jpg',
+        description: 'Sell digital goods such as ebooks, software, music, and any downloadable content directly to your customers. Instantly deliver files to buyers with secure downloads and easy access, streamlining the process from sale to delivery.',
+    },
+    {
+        name: 'Physical Goods',
+        img: '/physical-goods.jpg',
+        description: 'Manage your stock, process orders, and ship products to customers seamlessly. Whether it’s clothing, gadgets, or handmade items, sell and deliver physical goods through your online store, complete with inventory tracking and shipping options.',
+    },
+    {
+        name: 'Courses & Training',
+        img: '/courses-and-training.jpg',
+        description: 'Share your expertise by offering online courses or training programs. Create engaging learning experiences with video tutorials, written materials, and assessments that can help your customers gain new skills or knowledge.',
+    },
+    {
+        name: 'Memberships',
+        img: '/memberships.jpg',
+        description: 'Build a community around your brand by offering exclusive content, perks, and access through memberships. Reward loyal customers with special benefits, discounts, or early access to products and services, all managed effortlessly through your platform.',
+    },
+    {
+        name: 'Subscriptions',
+        img: '/subscriptions.jpg',
+        description: 'Provide ongoing products or services with subscription-based offerings. Whether it’s monthly deliveries, software access, or regular content, keep customers engaged and generate recurring revenue with flexible, automated subscription plans.',
+    },
+];

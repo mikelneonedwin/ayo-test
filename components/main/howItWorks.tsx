@@ -39,32 +39,27 @@ const Tab: React.FC<Item> = ({ icon, title, content }) => {
     return (
         <div
             ref={ref}
+            style={{ background: "rgb(248 248 248)" }}
             className={clsx(
-                "bg-action-secondary/25 p-6 rounded-lg shadow-md transform hover:scale-105 hover:shadow-lg hover:bg-action-secondary",
-                "[&>div>i]:animate-bounce [&>div>i]:hover:animate-ping",
+                "bg-main-bg p-6 rounded-lg shadow-md transform hover:scale-105 hover:shadow-lg transition-all duration-300",
+                // "[&>div>i]:animate-bounce [&>div>i]:hover:animate-ping",
                 isInView
-                    ? "transform-none opacity-100"
+                    ? "opacity-100"
                     : "-translate-x-[-200px] opacity-0"
             )}
-            style={{
-                transition: fastAnimate
-                    ? "all 0.3s"
-                    : "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
-            }}
         >
             <div className="flex justify-center mb-4">
-                <Icon icon={icon} className="text-action-hover text-5xl" />
+                <Icon icon={icon} className="text-action-default text-5xl" />
             </div>
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">{title}</h3>
+            <h3 className="text-xl font-semibold text-text-primary mb-2">{title}</h3>
             <p className="text-text-secondary">{content}</p>
         </div>
     )
 }
 
-
 const HowItWorks = () => {
     return (
-        <section className="pb-32 pt-16 bg-white">
+        <section className="py-32 bg-white">
             <div className="container mx-auto px-4 text-center">
                 <h2
                     className="text-4xl font-bold text-text-primary mb-6"

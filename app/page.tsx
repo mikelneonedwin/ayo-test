@@ -4,6 +4,7 @@ import {
     Hero,
     HowItWorks,
     Preview,
+    WhatYouCanSell,
     WhatYouGet
 } from "@/components/main";
 
@@ -16,6 +17,7 @@ export default function Home() {
             <HowItWorks />
             <WhatYouGet />
             <Features />
+            <WhatYouCanSell />
         </section>
     )
 }
