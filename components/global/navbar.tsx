@@ -1,8 +1,5 @@
-import Link from "next/link";
 import CTA from "../main/cta";
 import { Deliveries, FindWithCatLog, InvoiceLinks, OrdersAndCustomers, Payments, StoreLinks } from "../svg";
-import { HoverCard, HoverCardTrigger } from "../ui/hover-card";
-import Icon from "./icon";
 
 interface products extends Omit<Item, "icon"> {
     href: `/${string}`;
@@ -67,9 +64,8 @@ const Navbar = () => {
                         <h2 className="font-bold text-2xl text-action-default">Thrivr</h2>
                     </div>
 
-                    <div className="hidden md:flex gap-6 items-center text-sm text-main-101 font-semibold">
+                    {/* <div className="hidden md:flex gap-6 items-center text-sm text-main-101 font-semibold">
                         <Link href="#">Why Thrivr</Link>
-                        {/* TODO fix this hover card */}
                         <HoverCard>
                             <HoverCardTrigger className="flex items-center">
                                 Products <Icon icon="arrow_drop_down" />
@@ -77,7 +73,7 @@ const Navbar = () => {
                         </HoverCard>
                         <Link href="#">Pricing</Link>
                         <Link href="#">Learn</Link>
-                    </div>
+                    </div> */}
 
                 </div>
                 <div className="sm:flex hidden items-center justify-end">
