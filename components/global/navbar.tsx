@@ -80,7 +80,7 @@ const Navbar = () => {
                     </div>
 
                 </div>
-                <div className="flex items-center justify-end">
+                <div className="sm:flex hidden items-center justify-end">
                     <CTA />
                 </div>
             </nav>

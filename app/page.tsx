@@ -1,11 +1,12 @@
 import { NavBar } from "@/components/global";
 import {
     Features,
+    Footer,
     Hero,
     HowItWorks,
     Preview,
     WhatYouCanSell,
-    WhatYouGet
+    WhatYouGet,
 } from "@/components/main";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
             <WhatYouGet />
             <Features />
             <WhatYouCanSell />
+            <Footer />
         </section>
     )
 }

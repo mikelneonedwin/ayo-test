@@ -4,7 +4,7 @@ import Marquee from "react-fast-marquee";
 
 const Preview = () => {
     return (
-        <div className="bg-[#FDFDFD] !bg-main-bg mt-52 flex items-end">
+        <div className="bg-main-bg mt-52 flex items-end">
             <div className="move-up">
                 <figure className="px-10 w-full">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -24,11 +24,11 @@ const Preview = () => {
                             {Images.map((profile, index) => (
                                 <Image
                                     width={100}
-                                    height={100}
                                     key={index}
+                                    height={100}
                                     alt="profile_image"
                                     src={profile.medium}
-                                    className="rounded-full mx-6 inline-block border border-solid border-black/30"
+                                    className="rounded-full mx-3 inline-block border border-solid border-black/30"
                                 />
                             ))}
                         </Marquee>

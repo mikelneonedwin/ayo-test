@@ -151,3 +151,5 @@ export const sellItems = [
         description: 'Provide ongoing products or services with subscription-based offerings. Whether it’s monthly deliveries, software access, or regular content, keep customers engaged and generate recurring revenue with flexible, automated subscription plans.',
     },
 ];
+
+export const waitlistLink = "https://forms.gle/qguPWZQ39vBjJPGR8"
